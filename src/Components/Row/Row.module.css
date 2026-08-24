@@ -1,0 +1,35 @@
+.row {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
+  background-color: #000;
+  color: white;
+
+  padding: 25px 4% 0;
+}
+
+/* Bring the entire row above other rows */
+.row:hover {
+  z-index: 10;
+}
+
+.title {
+  margin: 0;
+  color: white;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    padding: 20px 3% 0;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}

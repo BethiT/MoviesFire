@@ -1,0 +1,65 @@
+.sliderContainer {
+  width: 100%;
+  position: relative;
+}
+
+/* CSS Module class */
+
+.swiper {
+  width: 100%;
+  padding: 18px 8px 110px;
+}
+
+/* Allow hover card to appear */
+
+:global(.swiper),
+:global(.swiper-wrapper),
+:global(.swiper-slide) {
+  overflow: visible !important;
+}
+
+/* Individual slide */
+
+.slide {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hovered movie comes above other movies */
+
+.slide:hover {
+  z-index: 100;
+}
+
+/* Swiper navigation arrows */
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  color: white !important;
+  z-index: 500;
+}
+
+/* Arrow size */
+
+:global(.swiper-button-next::after),
+:global(.swiper-button-prev::after) {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Optional arrow background */
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  width: 45px;
+  height: 70px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transition: background-color 0.2s ease;
+}
+
+:global(.swiper-button-next:hover),
+:global(.swiper-button-prev:hover) {
+  background-color: rgba(0, 0, 0, 0.8);
+}
