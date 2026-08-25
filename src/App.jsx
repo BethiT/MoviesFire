@@ -6,8 +6,9 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Banner from "./Components/Banner/Banner";
 import Footer from "./Components/Footer/Footer";
-import Row from "./components/Row/Row";
+import Row from "./Components/Row/Row";
 import movies from "./data copy/data";
+
 
 function App() {
   return (
